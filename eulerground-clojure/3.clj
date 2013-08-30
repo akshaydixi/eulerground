@@ -1,0 +1,7 @@
+(println ( - ((fn [x] (* x x)) (reduce + (range 1 101)))
+        (reduce + (map  (fn [x] (* x x))
+                        (range 1 101)
+                  )
+        )
+    )
+)
